@@ -1,0 +1,53 @@
+.snow-fall div {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url(star.png) no-repeat;
+  background-repeat: repeat;
+  opacity: 0;
+  transform-origin: 0 0;
+  animation-name: snowfall;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.snow-1 {
+  left: 20px;
+  animation-duration: 2.5s;
+  animation-delay: 0.0s;
+}
+.snow-2 {
+  left: 80px;
+  animation-duration: 2.7s;
+  animation-delay: 0.2s;
+}
+.snow-3 {
+  left: 140px;
+  animation-duration: 2.9s;
+  animation-delay: 0.4s;
+}
+.snow-4 {
+  left: 200px;
+  animation-duration: 3.1s;
+  animation-delay: 0.6s;
+}
+.snow-5 {
+  left: 260px;
+  animation-duration: 3.5s;
+  animation-delay: 0.8s;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(480px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(780px);
+    opacity: 0.3;
+  }
+}
